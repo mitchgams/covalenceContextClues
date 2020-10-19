@@ -17,4 +17,3 @@ function clickH3(num) {
         alert("Accusation " + num + ": I accuse " + friend + ", with the " + weapon + " in the " + location + "!");
     }
 }
-console.log(50 % 21);
