@@ -5,7 +5,7 @@ var weapons = ['toothpick', 'pencil', 'hammer', 'potato', 'rock', 'lead pipe', '
 $(document).ready(function() {
     for(var i = 1; i < 101; i++) {
         $('<li class="list-group-item"><h3 id=' + i + '>Accusation ' + i + '</h3></li>').appendTo('.list-group-flush');
-        $('h3').click(clickH3(i));
+        $('#'+i).click(clickH3(i));
     }
 });
 
@@ -17,3 +17,5 @@ function clickH3(num) {
         alert("Accusation " + num + ": I accuse " + friend + ", with the " + weapon + " in the " + location + "!");
     }
 }
+
+console.log(41/10);
