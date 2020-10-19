@@ -10,12 +10,11 @@ $(document).ready(function() {
 });
 
 function clickH3(num) {
-    var friend = friends[Math.floor(num/20)];
-    var location = locations[Math.floor(num/10)];
-    var weapon = weapons[Math.floor(num/5)];
+    var friend = friends[num%20];
+    var location = locations[num%10];
+    var weapon = weapons[num%5];
     return function() {
         alert("Accusation " + num + ": I accuse " + friend + ", with the " + weapon + " in the " + location + "!");
     }
 }
-
-console.log(41/10);
+console.log(50 % 21);
